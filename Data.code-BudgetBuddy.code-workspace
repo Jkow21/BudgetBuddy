@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "Controllers",
+			"path": "../BudgetBuddyAPI/Controllers"
+		},
+		{
+			"name": "Data",
+			"path": "../BudgetBuddyAPI/Data"
+		},
+		{
+			"name": "Models",
+			"path": "../BudgetBuddyAPI/Models"
+		}
+	]
+}
