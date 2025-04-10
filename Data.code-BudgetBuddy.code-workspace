@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "Controllers",
+			"path": "Controllers"
+		},
+		{
+			"name": "Data",
+			"path": "Data"
+		},
+		{
+			"name": "Models",
+			"path": "Models"
+		}
+	]
+}
