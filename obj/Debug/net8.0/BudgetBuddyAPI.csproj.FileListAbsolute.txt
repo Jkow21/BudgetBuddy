@@ -72,3 +72,4 @@
 /Users/jakubkowalczyk/BudgetBuddyAPI/obj/Debug/net8.0/BudgetBuddyAPI.pdb
 /Users/jakubkowalczyk/BudgetBuddyAPI/obj/Debug/net8.0/BudgetBuddyAPI.genruntimeconfig.cache
 /Users/jakubkowalczyk/BudgetBuddyAPI/obj/Debug/net8.0/ref/BudgetBuddyAPI.dll
+/Users/jakubkowalczyk/BudgetBuddyAPI/obj/Debug/net8.0/BudgetBuddyAPI.sourcelink.json
