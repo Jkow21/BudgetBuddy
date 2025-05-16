@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{0C3BFD11-3C71-4B55-A7F6-654B097DCD60}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BudgetBuddy PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/DTO/UpdateTransactionDto.cs">
+    <Files>
+      <File FileName="Models/Transaction.cs" />
+      <File FileName="Models/Goal.cs" />
+      <File FileName="Models/Expense.cs" />
+      <File FileName="Models/Account.cs" />
+      <File FileName="Models/User.cs" />
+      <File FileName="Models/Budget.cs" />
+      <File FileName="Models/Category.cs" />
+      <File FileName="Models/Invoice.cs" />
+      <File FileName="Models/Incomes.cs" />
+      <File FileName="Models/DTO/CreateTransactionDto.cs" />
+      <File FileName="Models/DTO/UpdateGoalDto.cs" />
+      <File FileName="Models/DTO/CategoryDto.cs" />
+      <File FileName="Models/DTO/BaseDto.cs" Line="1" Column="1" />
+      <File FileName="Models/DTO/UpdateTransactionDto.cs" Line="1" Column="1" />
+      <File FileName="Models/DTO/CreateGoalDto.cs" />
+      <File FileName="Models/DTO/TransactionDto.cs" />
+      <File FileName="Controllers/AccountsController.cs" />
+      <File FileName="Controllers/TransactionsController.cs" />
+      <File FileName="Controllers/GoalsController.cs" />
+      <File FileName="Controllers/DataController.cs" />
+      <File FileName="Infrastructure/BudgetContext.cs" Line="101" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BudgetBuddy" expanded="True" selected="True">
+            <Node name="BudgetBuddy" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
