@@ -8,4 +8,6 @@ public class CreateExpenseDto
     public string UserId { get; set; } = string.Empty;
     public int BudgetId { get; set; } 
     public int? InvoiceId { get; set; }
+    
+    public int AccountId { get; set; }
 }
