@@ -67,7 +67,8 @@ public class ExpenseController : ControllerBase
             UserId = expense.UserId,
             Date = expense.Date,
             CategoryId = expense.CategoryId,
-            InvoiceId = expense.InvoiceId
+            InvoiceId = expense.InvoiceId,
+            AccountId = expense.AccountId
         };
 
         var createdExpense = await _expenseService.CreateExpenseAsync(newExpense);

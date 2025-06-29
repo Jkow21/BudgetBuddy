@@ -8,4 +8,6 @@ public class CreateIncomeDto
     public DateTime Date { get; set; }
     public string UserId { get; set; } = string.Empty;
     public int CategoryId { get; set; }
+
+    public int AccountId  { get; set; }
 }

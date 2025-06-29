@@ -4,6 +4,7 @@ using BudgetBuddy.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BudgetBuddy.Migrations
 {
     [DbContext(typeof(BudgetContext))]
-    partial class BudgetContextModelSnapshot : ModelSnapshot
+    [Migration("20250628074815_AddRelationAccountWithIncomes")]
+    partial class AddRelationAccountWithIncomes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -128,9 +131,6 @@ namespace BudgetBuddy.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AccountId")
-                        .HasColumnType("int");
-
                     b.Property<decimal>("Amount")
                         .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
@@ -156,8 +156,6 @@ namespace BudgetBuddy.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AccountId");
 
                     b.HasIndex("CategoryId");
 
@@ -695,12 +693,6 @@ namespace BudgetBuddy.Migrations
 
             modelBuilder.Entity("BudgetBuddy.Models.Expense", b =>
                 {
-                    b.HasOne("BudgetBuddy.Models.Account", "Account")
-                        .WithMany("Expenses")
-                        .HasForeignKey("AccountId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("BudgetBuddy.Models.Category", "Category")
                         .WithMany("Expenses")
                         .HasForeignKey("CategoryId")
@@ -712,8 +704,6 @@ namespace BudgetBuddy.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Account");
 
                     b.Navigation("Category");
 
@@ -905,8 +895,6 @@ namespace BudgetBuddy.Migrations
 
             modelBuilder.Entity("BudgetBuddy.Models.Account", b =>
                 {
-                    b.Navigation("Expenses");
-
                     b.Navigation("Incomes");
                 });
 

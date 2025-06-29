@@ -8,4 +8,6 @@ public class Account {
     public required string CurrencyId { get; set; }
     public required User User { get; set; }
     public int AccountTypesId { get; set; }
+    public ICollection<Income> Incomes { get; set; } = [];
+    public ICollection<Expense> Expenses { get; set; } = [];
 }

@@ -8,7 +8,7 @@ public class Goal {
   public decimal TargetAmount { get; set; } // decimal OK dla SQL Server
 
   public DateTime TargetDate { get; set; } // dodaj, jeśli używasz go w kontrolerze
-  public string Currency { get; set; }
+  public string Currency { get; set; } = "PLN";
 
   public int BudgetId { get; set; }
 

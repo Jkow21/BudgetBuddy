@@ -67,7 +67,8 @@ public class IncomeController : ControllerBase
             Amount = dto.Amount,
             Date = dto.Date,
             UserId = dto.UserId,
-            CategoryId = dto.CategoryId
+            CategoryId = dto.CategoryId,
+            AccountId = dto.AccountId
             // NIE przypisujemy obiektu Category!
         };
 

@@ -11,5 +11,7 @@ namespace BudgetBuddy.Models.DTO
         public int BudgetId { get; set; }
 
         public string UserId { get; set; } = string.Empty;
+        
+        public string Currency { get; set; } = "PLN";  // Domyślna waluta, jeśli nie podano
     }
 }

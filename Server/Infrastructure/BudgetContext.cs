@@ -155,5 +155,17 @@ public class BudgetContext(DbContextOptions<BudgetContext> options) : IdentityDb
       .HasOne(usb => usb.ShareBudget)
       .WithMany(sb => sb.UserShareBudgets)
       .HasForeignKey(usb => usb.ShareBudgetId);
+    
+    modelBuilder.Entity<Income>()
+      .HasOne(i => i.Account)
+      .WithMany(a => a.Incomes) 
+      .HasForeignKey(i => i.AccountId)
+      .OnDelete(DeleteBehavior.Restrict); // lub inny tryb usuwania
+
+    modelBuilder.Entity<Expense>()
+      .HasOne(i => i.Account)
+      .WithMany(a => a.Expenses) 
+      .HasForeignKey(i => i.AccountId)
+      .OnDelete(DeleteBehavior.Restrict); // lub inny tryb usuwania
   }
 }
